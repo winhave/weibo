@@ -45,4 +45,9 @@ class User extends Authenticatable
         return "http://www.gravatar.com/avatar/$hash?s=$size";
     }
 
+    public funciton statuses()
+    {
+        return $this->hasMany(Status::class);
+    }
+
 }
